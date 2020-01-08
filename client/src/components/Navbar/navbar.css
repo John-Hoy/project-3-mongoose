@@ -3,9 +3,6 @@
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
-     -webkit-box-pack: start;
-     -ms-flex-pack: start;
-     justify-content: flex-start;
      text-transform: uppercase;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      font-size: 1.1em;
