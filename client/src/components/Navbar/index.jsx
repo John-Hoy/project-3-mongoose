@@ -4,12 +4,17 @@ import './navbar.css'
 
 function NavBarComponent({ loggedIn, _logout }) {
     return (
-        <nav className="navbar navbar-light bg-dark">
+        <nav className="">
             {loggedIn ?
-                <ul className="nav">
+                <ul className="nav_root">
                     <li className="nav-item">
                         <Link to="/" className="nav-link">
                             Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/listings" className="nav-link">
+                            Building listings
                         </Link>
                     </li>
                     <li>
@@ -19,21 +24,21 @@ function NavBarComponent({ loggedIn, _logout }) {
                     </li>
                 </ul>
                 :
-                <ul className="nav">
+                <ul className="nav_root">
                     <li className="nav-item">
                         <Link to="/" className="nav-link">
                             Home
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/login" className="nav-link">
-                            Login
-						</Link>
+                        <Link to="/listings" className="nav-link">
+                            Building listings
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/signup" className="nav-link">
-                            Sign Up
-						</Link>
+                        <Link to="/Blacklist" className="nav-link">
+                            Black list
+                        </Link>
                     </li>
                 </ul>
             }

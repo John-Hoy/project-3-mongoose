@@ -5,7 +5,7 @@ import LoginForm from './pages/LoginForm'
 import SignupForm from './pages/SignupForm'
 import Home from './pages/Home'
 import { NavBar } from './components'
-
+import Tenant from './components/Tenant'
 class App extends Component {
 	constructor(props) {
 		super(props)
