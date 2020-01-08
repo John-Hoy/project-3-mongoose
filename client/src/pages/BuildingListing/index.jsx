@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
 
-export default class Gallery extends Component {
+export default class Listing extends Component {
      
 }
