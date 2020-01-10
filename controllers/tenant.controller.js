@@ -1,23 +1,22 @@
 const db = require("../models");
 const router = require("express").Router();
 
-// Read All
+// Read All tenants
 router.route("/").get(function(req, res){
     console.log(req.query)
-    db.Book
-        .find()
-        .sort({ date: -1 })
+    db.Tenant
+        .find({})
+        .sort({ last_name: -1 })
         .then(dbModel => {
             console.log(dbModel)
-            res.json(dbModel)
-            
+            res.json(dbModel)      
         })
         .catch(err => res.status(422).json(err));
 })
 
-// Create
+// Create a tenant
 router.route("/").post((req, res) => {
-    db.Book
+    db.Tenant
         .create(req.body)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
@@ -25,7 +24,7 @@ router.route("/").post((req, res) => {
 
 // Read One
 router.route("/:id").get((req, res) => {
-    db.Book
+    db.Tenant
         .findById(req.params.id)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
@@ -33,15 +32,15 @@ router.route("/:id").get((req, res) => {
 
 // Update 
 router.route("/:id").put((req, res) => {
-    db.Book
+    db.Tenant
         .findOneAndUpdate({ _id: req.params.id }, req.body)
         .then(dbModel => res.json(dbModel))
-        .catch(err => res.status(422).json(err));
+        .catch(err => res.status(422).json(err));a
 })
 
 // Delete
 router.route("/:id").delete((req, res) => {
-    db.Book
+    db.Tenant
         .findById({ _id: req.params.id })
         .then(dbModel => dbModel.remove())
         .then(dbModel => res.json(dbModel))
