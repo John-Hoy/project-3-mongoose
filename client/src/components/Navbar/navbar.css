@@ -4,6 +4,7 @@
      display: -ms-flexbox;
      display: flex;
      text-transform: uppercase;
+     list-style-type: none;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      font-size: 1.1em;
      font-weight: 700;
@@ -11,7 +12,7 @@
      height: auto;
      padding: 1em; }
      .nav_root li {
-       border-right: 1px solid #f1f1f1;
+       border-right: 1px dashed #f1f1f1;
        padding: .25em .5em; }
        .nav_root li:last-child {
          border: none; }

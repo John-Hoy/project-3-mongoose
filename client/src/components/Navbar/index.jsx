@@ -1,28 +1,15 @@
 import React from "react"
 import { Link } from 'react-router-dom'
 import './navbar.css'
-//  import anime from 'animejs';
+import Anime from 'react-anime'
 
-// componentDidUpdate(){
-//     this.animeRef = anime({
-//         targets: this.liRef.current,
-//         translateX: () => {
-//             if( this.props.status == 'entering' ) {
-//                 return ['-100%', '0%'];
-//             } else if( this.props.status == 'exiting' ) {
-//                 return ['0%', '100%'];
-//             }
-//         },
-//         elasticity: () => {
-//             if( this.props.status == 'entering' ) {
-//                 return 300;
-//             } else if( this.props.status == 'exiting' ) {
-//                 return 0;
-//             }
-//         },
-//         duration: 500
-//     });
-// }
+// anime({
+//     targets: 'li',
+//     translateX: 250,
+//     rotate: '1turn',
+//     backgroundColor: '#FFF',
+//     duration: 800
+//   });
 //? adding animations with the above code testing out anime.js for the animation on our navbar
 
 function NavBarComponent({ loggedIn, _logout }) {
