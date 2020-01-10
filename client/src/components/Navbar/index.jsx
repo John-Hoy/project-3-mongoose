@@ -1,16 +1,6 @@
 import React from "react"
 import { Link } from 'react-router-dom'
 import './navbar.css'
-import Anime from 'react-anime'
-
-// anime({
-//     targets: 'li',
-//     translateX: 250,
-//     rotate: '1turn',
-//     backgroundColor: '#FFF',
-//     duration: 800
-//   });
-//? adding animations with the above code testing out anime.js for the animation on our navbar
 
 function NavBarComponent({ loggedIn, _logout }) {
     return (
@@ -41,7 +31,7 @@ function NavBarComponent({ loggedIn, _logout }) {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/Listings" className="nav-link">
+                        <Link to="/listing" className="nav-link">
                             Building listings
                         </Link>
                     </li>
@@ -53,6 +43,16 @@ function NavBarComponent({ loggedIn, _logout }) {
                     <li className="nav-item">
                         <Link to="/ManageTenants" className="nav-link">
                             Manage Tenants
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/signup" className="nav-link">
+                            Sign up
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/login" className="nav-link">
+                            Log in
                         </Link>
                     </li>
                 </ul>
