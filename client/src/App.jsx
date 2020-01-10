@@ -5,6 +5,7 @@ import LoginForm from './pages/LoginForm'
 import SignupForm from './pages/SignupForm'
 import Home from './pages/Home'
 import { NavBar } from './components'
+import Building from './components/Building'
 
 class App extends Component {
 	constructor(props) {
@@ -89,6 +90,10 @@ class App extends Component {
 					exact path="/signup"
 					component={SignupForm}
 				/>
+				<Route
+					exact path="/listing"
+					render={() => <Building/>
+					}/>
 			</div>
 		)
 	}
