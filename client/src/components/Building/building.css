@@ -1,5 +1,5 @@
 .item{
-     background-position: center;
      background-repeat: no-repeat;
-     background-color: bisque;
+     width: "50%";
+     height: "400px";
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Header } from '../../components';
 import './error.css';
-import { NavBar } from '../../components/Navbar';
+import { NavBar } from '../../components';
 
 export default class Error extends Component {
 	constructor(props) {
