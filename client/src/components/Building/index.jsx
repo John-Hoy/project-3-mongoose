@@ -9,43 +9,44 @@ import outsideShot from './images/outside.jpg'
 import pool from './images/pool.jpg'
 import './building.css'
 
+
 const bedroomImg = {
-    width: "100%",
+    width: "50%",
     height: "400px",
     backgroundImage: `url(${bedroom})`,
 };
 const bathroomImg = {
-    width: "100%",
+    width: "50%",
     height: "400px",
     backgroundImage: `url(${bathroom})`,
 };
 const poolImg = {
-    width: "100%",
+    width: "50%",
     height: "400px",
     backgroundImage: `url(${pool})`,
 };
 const interiorImg = {
-    width: "100%",
+    width: "50%",
     height: "400px",
     backgroundImage: `url(${interior})`,
 };
 const outsideImg = {
-    width: "100%",
+    width: "50%",
     height: "400px",
     backgroundImage: `url(${outsideShot})`,
 };
 const fridgeImg = {
-    width: "100%",
+    width: "50%",
     height: "400px",
     backgroundImage: `url(${fridge})`,
 };
 const balconyImg = {
-    width: "100%",
+    width: "50%",
     height: "400px",
     backgroundImage: `url(${balcony})`,
 };
 const kitchenImg = {
-    width: "100%",
+    width: "50%",
     height: "400px",
     backgroundImage: `url(${kitchen})`,
 };
@@ -59,7 +60,7 @@ function Building() {
                 <div className="item" style={ outsideImg }></div>
                 <div className="item" style={ bathroomImg }></div>
                 <div className="item" style={ kitchenImg }></div>
-                <div className="item" style={ bedroomImg }></div>
+                <div className="item" style={ bedroomImg }></div> 
                 <div className="item" style={ fridgeImg }></div>
                 <div className="item" style={ poolImg }></div>
                 <div className="item" style={ balconyImg }></div>
