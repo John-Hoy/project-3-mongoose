@@ -1,21 +1,34 @@
-import React, { useCallback } from "react";
-// Import the dropzone component
-import Dropzone from "../../components/DropZone";
+import React, { Component } from 'react'
+import './Upload.css'
 
-function ImageUpload() {
-  // onDrop function  
-  const onDrop = useCallback(acceptedFiles => {
-    // this callback will be called after files get dropped, we will get the acceptedFiles. If you want, you can even access the rejected files too
-    console.log(acceptedFiles);
-  }, []);
-
-  // We pass onDrop function and accept prop to the component. It will be used as initial params for useDropzone hook
-  return (
-    <main className="App">
-      <h1 className="text-center">Drag and Drop Example</h1>
-      <Dropzone onDrop={onDrop} accept={"image/*"} />
-    </main>
-  );
+class Upload extends Component {
+     constructor(props) {
+          super(props)
+     }
+     render() {
+          return (
+               <div className="Upload">
+                    <span className="Title">Upload Files</span>
+                    <div className="Content">
+                         <div>
+                              <Dropzone
+                                   onFilesAdded={this.onFilesAdded}
+                                   disabled={this.state.uploading || this.state.successfullUploaded}
+                              />
+                         </div>
+                         <div className="Files">
+                              {this.state.files.map(file => {
+                                   return (
+                                        <div key={file.name} className="Row">
+                                             <span className="Filename">{file.name}</span>
+                                             {this.renderProgress(file)}
+                                        </div>
+                                   );
+                              })}
+                         </div>
+                    </div>
+                    <div className="Actions">{this.renderActions()}</div>
+               </div>
+          );
+     }
 }
-
-export default ImageUpload;
