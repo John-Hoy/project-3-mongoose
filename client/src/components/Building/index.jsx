@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import bathroom from './images/bathroom.jpg'
 import interior from './images/apartment-inside.jpg'
 import kitchen from './images/kitchen.jpg'
