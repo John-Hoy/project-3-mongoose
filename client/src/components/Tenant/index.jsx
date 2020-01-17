@@ -13,7 +13,7 @@ function TenantCard(props) {
             <strong>Name:</strong> {props.name}
           </li>
           <li>
-            <strong>Rent:</strong> {props.occupation}
+            <strong>Rent:</strong> {props.rent}
           </li>
           <li>
             <strong>Unit Number:</strong> {props.unit_no}
