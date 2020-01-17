@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import { NavBar } from './components'
 import Building from './components/Building'
 import AddTenant from './components/AddTenant'
+// import Animation from './components/Animation'
 
 class App extends Component {
 	constructor(props) {

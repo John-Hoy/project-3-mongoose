@@ -11,43 +11,43 @@ import './building.css'
 
 
 const bedroomImg = {
-    width: "50%",
-    height: "400px",
+    width: "300px",
+    height: "300px",
     backgroundImage: `url(${bedroom})`,
 };
 const bathroomImg = {
-    width: "50%",
-    height: "400px",
+    width: "300px",
+    height: "300px",
     backgroundImage: `url(${bathroom})`,
 };
 const poolImg = {
-    width: "50%",
-    height: "400px",
+    width: "300px",
+    height: "300px",
     backgroundImage: `url(${pool})`,
 };
 const interiorImg = {
-    width: "50%",
-    height: "400px",
+    width: "300px",
+    height: "300px",
     backgroundImage: `url(${interior})`,
 };
 const outsideImg = {
-    width: "50%",
-    height: "400px",
+    width: "300px",
+    height: "300px",
     backgroundImage: `url(${outsideShot})`,
 };
 const fridgeImg = {
-    width: "50%",
-    height: "400px",
+    width: "300px",
+    height: "300px",
     backgroundImage: `url(${fridge})`,
 };
 const balconyImg = {
-    width: "50%",
-    height: "400px",
+    width: "300px",
+    height: "300px",
     backgroundImage: `url(${balcony})`,
 };
 const kitchenImg = {
-    width: "50%",
-    height: "400px",
+    width: "300px",
+    height: "300px",
     backgroundImage: `url(${kitchen})`,
 };
 
