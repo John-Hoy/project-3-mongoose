@@ -8,6 +8,7 @@ import bedroom from './images/bedroom.jpg'
 import outsideShot from './images/outside.jpg'
 import pool from './images/pool.jpg'
 import './building.css'
+import Footer from '../../components/Footer'
 
 
 const bedroomImg = {
@@ -57,17 +58,16 @@ function Building() {
 
             <div className="Container">
 
-                <div className="item" style={ outsideImg }></div>
-                <div className="item" style={ bathroomImg }></div>
-                <div className="item" style={ kitchenImg }></div>
-                <div className="item" style={ bedroomImg }></div> 
-                <div className="item" style={ fridgeImg }></div>
-                <div className="item" style={ poolImg }></div>
-                <div className="item" style={ balconyImg }></div>
-                <div className="item" style={ interiorImg }></div>
-
+                <div className="item" style={outsideImg}></div>
+                <div className="item" style={bathroomImg}></div>
+                <div className="item" style={kitchenImg}></div>
+                <div className="item" style={bedroomImg}></div>
+                <div className="item" style={fridgeImg}></div>
+                <div className="item" style={poolImg}></div>
+                <div className="item" style={balconyImg}></div>
+                <div className="item" style={interiorImg}></div>
             </div>
-
+            <Footer />
         </div>
     )
 }
