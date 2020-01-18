@@ -3,7 +3,7 @@ import { Formik, Field, Form, ErrorMessage } from "./node_modules/formik";
 import * as Yup from "./node_modules/yup";
 import './style.css'
 
-const NewProperty = () => {
+const Newproperty = () => {
     return (
         <Formik
             intialValues={{ unit_no: '', bedrooms: '', baths: '', sqft: '', occupied: '', date_available: '', rent: '' }}
@@ -69,7 +69,7 @@ const NewProperty = () => {
     );
 };
 
-export default NewProperty;
+export default Newproperty;
 
 
 
