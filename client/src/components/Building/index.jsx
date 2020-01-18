@@ -10,7 +10,6 @@ import pool from './images/pool.jpg'
 import './building.css'
 import Footer from '../../components/Footer'
 
-
 const bedroomImg = {
     width: "300px",
     height: "300px",
