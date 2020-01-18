@@ -1,5 +1,17 @@
 .item{
      background-repeat: no-repeat;
-     width: "50%";
-     height: "400px";
+     float: left;
+     width: 33.33%;
+     padding: 5px;
+
+}
+.column{
+     float: left;
+     width: 33.33%;
+     padding: 5px;
+}
+.row{
+     content:"";
+     clear: both;
+     display: table;
 }

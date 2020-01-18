@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Header } from '../../components'
 import "./home.css"
-
+import Footer from '../../components/Footer'
 export default class Home extends Component {
 	constructor(props) {
 		super(props)
@@ -33,6 +33,7 @@ export default class Home extends Component {
 					<code>
 						{JSON.stringify(this.props)}
 					</code>
+					<Footer />
 				</div>
 			)
 		}

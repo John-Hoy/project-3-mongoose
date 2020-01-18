@@ -1,6 +1,18 @@
 import React, { Component } from 'react';
+import Footer from '../../components/Footer'
+import Upload from '../../components/Upload'
 
 
-export default class BlackList extends Component {
-     
+function BlackList() {
+     return (
+          <div className="BlackList">
+               <div className="Container">
+                    <Upload />
+
+                    <Footer />
+               </div>
+          </div>
+     )
 }
+
+export default BlackList;
