@@ -1,59 +1,93 @@
-import React from 'react';
+import React from './node_modules/react';
+import { Formik, Field, Form, ErrorMessage } from "./node_modules/formik";
+import * as Yup from "./node_modules/yup";
 import './style.css'
 
-export default class Newproperty extends Component {
-    render() {
-        return (
-            <div className="newproperty_root">
-                <div className="newproperty_container">
-                    <div>
-                        {/* New Unit Number */}
-                        <h3>Unit Number</h3>
-                        <input id="unitNumber" placeholder="Unit No." type="text" />
+const NewProperty = () => {
+    return (
+        <Formik
+            intialValues={{ unit_no: '', bedrooms: '', baths: '', sqft: '', occupied: '', date_available: '', rent: '' }}
+            validationSchema={Yup.object({
+                unit_no: Yup.string()
+                    .max(20, 'Must be 20 characters or less')
+                    .required('Required'),
+                bedrooms: Yup.string()
+                    .max(20, 'Must be 20 characters of less')
+                    .required('Required'),
+                baths: Yup.string()
+                    .max(20, 'Must be 20 characters of less')
+                    .required('Required'),
+                sqft: Yup.string()
+                    .max(20, 'Must be 20 characters of less')
+                    .required('Required'),
+                occupied: Yup.string()
+                    .max(20, 'Must be 20 characters of less')
+                    .required('Required'),
+                date_available: Yup.string()
+                    .max(20, 'Must be 20 characters of less')
+                    .required('Required'),
+                rent: Yup.string()
+                    .max(20, 'Must be 20 characters of less')
+                    .required('Required')
+            })}
+            onSubmit={(values, { setSubmitting }) => {
+                setTimeout(() => {
+                    alert(JSON.stringify(values, null, 2));
+                    setSubmitting(false);
+                }, 400);
+            }}
+        >
+            <Form>
+                <label htmlFor="unit_no">Unit Number</label>
+                <Field name="unit_no" type="text" />
+                <ErrorMessage name="unit_no" />
+                <br />
+                <label htmlFor="bedrooms">Number of Bedrooms</label>
+                <Field name="bedrooms" type="text" />
+                <ErrorMessage name="bedrooms" />
+                <br />
+                <label htmlFor="sqft">Square Footage of Unit:</label>
+                <Field name="sqft" type="number" />
+                <ErrorMessage name="sqft" />
+                <br />
+                <label htmlFor="occupied">Occupied?</label>
+                <Field name="occupied" type="boolean" />
+                <ErrorMessage name="occupied" />
+                <br />
+                <label htmlFor="date_available">Date Available:</label>
+                <Field name="date_available" type="text" />
+                <ErrorMessage name="date_available" />
+                <br />
+                <label htmlFor="rent">Rent</label>
+                <Field name="rent" type="text" />
+                <ErrorMessage name="rent" />
+                <br />
 
-                        {/* Starting Rent*/}
-                        <h3>Starting Rent</h3>
-                        <input id="startRent" placeholder="Starting REnt" type="text" />
+                <button type="submit">Submit</button>
+            </Form>
+        </Formik>
+    );
+};
 
-                        {/* Number of Bedrooms */}
-                        <h3>Bedrooms</h3>
-                        <select id="numBedrooms">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-
-                        {/* Number of Baths */}
-                        <h3>Number of Baths</h3>
-                        <select id="numBaths">
-                            <option value="1">1</option>
-                            <option value="1.5">1.5</option>
-                            <option value="2">2</option>
-                            <option value="2.5">2.5</option>
-                        </select>
-
-                        {/* Square Footage */}
-                        <h3>Square Footage</h3>
-                        <input id="sqft" placeholder="Square Footage" type="text" />
-
-                        {/* Occupied */}
-                        <input type="radio" name="occupied" value="true" checked /> No<br />
-                        <input type="radio" name="occupied" value="false" /> Yes<br />
-
-                        {/* Date Available */}
-                        <h3>Date Available</h3>
-                        <input type="date" id="myDate" placeholder="2014-02-09" value=""/>
-
-                        {/* Submit */}
-
-                        <input type="submit" value="Submit"/>
+export default NewProperty;
 
 
 
-                    </div>
-                    </div>
-                </div>
-                );
-            }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
