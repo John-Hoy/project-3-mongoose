@@ -66,9 +66,8 @@ function Building() {
                 <div className="item" style={poolImg}></div>
                 <div className="item" style={balconyImg}></div>
                 <div className="item" style={interiorImg}></div>
-                <Footer />
             </div>
-
+            <Footer />
         </div>
     )
 }
