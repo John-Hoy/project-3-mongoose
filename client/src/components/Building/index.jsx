@@ -9,7 +9,7 @@ import outsideShot from './images/outside.jpg'
 import pool from './images/pool.jpg'
 import './building.css'
 import Footer from '../../components/Footer'
-
+import Upload from '../Upload'
 
 const bedroomImg = {
     width: "300px",
@@ -67,6 +67,7 @@ function Building() {
                 <div className="item" style={balconyImg}></div>
                 <div className="item" style={interiorImg}></div>
             </div>
+            <Upload/>
             <Footer />
         </div>
     )
