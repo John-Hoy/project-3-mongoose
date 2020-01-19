@@ -3,9 +3,12 @@ import axios from 'axios'
 import { Route } from 'react-router-dom'
 import LoginForm from './pages/LoginForm'
 import SignupForm from './pages/SignupForm'
-import Home from './pages/Home'
+import Home from './components/Home'
 import { NavBar } from './components'
 import Building from './components/Building'
+import AddTenant from './components/AddTenant'
+// import Animation from './components/Animation'
+import BlackList from './pages/BlacklistPage'
 
 class App extends Component {
 	constructor(props) {
@@ -76,7 +79,8 @@ class App extends Component {
 					exact
 					path="/"
 					render={() =>
-						<Home user={this.state.user} />} />
+						<Home />} 
+				/>
 				<Route
 					exact
 					path="/login"
@@ -95,7 +99,12 @@ class App extends Component {
 					render={() => <Building />
 					} />
 				<Route
-					exact path="/ManagaeTenants"
+					exact path="/ManageTenants"
+					render={() => <AddTenant />}
+				/>
+								<Route
+					exact path="/Blacklist"
+					render={() => <BlackList />}
 				/>
 			</div>
 		)

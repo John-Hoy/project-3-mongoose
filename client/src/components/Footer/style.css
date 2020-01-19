@@ -1,0 +1,9 @@
+.footer_root {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: rgba(41, 201, 223, 0.8);
+     color: white;
+     text-align: center;
+   }

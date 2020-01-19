@@ -1,61 +1,72 @@
-import React, { Component } from "react";
-import "./style.css";
-class Form extends Component {
-    // Setting the component's initial state
-    state = {
-        unit_no: "",
-        bedrooms: "",
-        baths: "",
-        sqft: "",
-        occupied: "false",
-        date_available: "",
-        rent: ""
+import React from './node_modules/react';
+import { Formik, Field, Form, ErrorMessage } from "./node_modules/formik";
+import * as Yup from "./node_modules/yup";
+import './style.css'
 
-    };
-    handleInputChange = event => {
-        // Getting the value and name of the input which triggered the change
-        const { name, value } = event.target;
-        // Updating the input's state
-        this.setState({
-            [name]: value
-        });
-    };
-    handleFormSubmit = event => {
-        // Preventing the default behavior of the form submit (which is to refresh the page)
-        event.preventDefault();
-        // Alert the user their first and last name, clear `this.state.firstName` and `this.state.lastName`, clearing the inputs
-        alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
-        this.setState({
-            firstName: "",
-            lastName: ""
-        });
-    };
-    render() {
-        // Notice how each input has a `value`, `name`, and `onChange` prop
-        return (
-            <div>
-                <p>
-                    Hello {this.state.firstName} {this.state.lastName}
-                </p>
-                <form className="form">
-                    <input
-                        value={this.state.firstName}
-                        name="firstName"
-                        onChange={this.handleInputChange}
-                        type="text"
-                        placeholder="First Name"
-                    />
-                    <input
-                        value={this.state.lastName}
-                        name="lastName"
-                        onChange={this.handleInputChange}
-                        type="text"
-                        placeholder="Last Name"
-                    />
-                    <button onClick={this.handleFormSubmit}>Submit</button>
-                </form>
-            </div>
-        );
-    }
-}
-export default Form;
+const Newproperty = () => {
+    return (
+        <Formik
+            intialValues={{ unit_no: '', bedrooms: '', baths: '', sqft: '', occupied: '', date_available: '', rent: '' }}
+            validationSchema={Yup.object({
+                unit_no: Yup.string()
+                    .max(20, 'Must be 20 characters or less')
+                    .required('Required'),
+                bedrooms: Yup.string()
+                    .max(20, 'Must be 20 characters of less')
+                    .required('Required'),
+                baths: Yup.string()
+                    .max(20, 'Must be 20 characters of less')
+                    .required('Required'),
+                sqft: Yup.string()
+                    .max(20, 'Must be 20 characters of less')
+                    .required('Required'),
+                occupied: Yup.string()
+                    .max(20, 'Must be 20 characters of less')
+                    .required('Required'),
+                date_available: Yup.string()
+                    .max(20, 'Must be 20 characters of less')
+                    .required('Required'),
+                rent: Yup.string()
+                    .max(20, 'Must be 20 characters of less')
+                    .required('Required')
+            })}
+            onSubmit={(values, { setSubmitting }) => {
+                setTimeout(() => {
+                    alert(JSON.stringify(values, null, 2));
+                    setSubmitting(false);
+                }, 400);
+            }}
+        >
+            <Form>
+                <label htmlFor="unit_no">Unit Number</label>
+                <Field name="unit_no" type="text" />
+                <ErrorMessage name="unit_no" />
+                <br />
+                <label htmlFor="bedrooms">Number of Bedrooms</label>
+                <Field name="bedrooms" type="text" />
+                <ErrorMessage name="bedrooms" />
+                <br />
+                <label htmlFor="sqft">Square Footage of Unit:</label>
+                <Field name="sqft" type="number" />
+                <ErrorMessage name="sqft" />
+                <br />
+                <label htmlFor="occupied">Occupied?</label>
+                <Field name="occupied" type="boolean" />
+                <ErrorMessage name="occupied" />
+                <br />
+                <label htmlFor="date_available">Date Available:</label>
+                <Field name="date_available" type="text" />
+                <ErrorMessage name="date_available" />
+                <br />
+                <label htmlFor="rent">Rent</label>
+                <Field name="rent" type="text" />
+                <ErrorMessage name="rent" />
+                <br />
+
+                <button type="submit">Submit</button>
+            </Form>
+        </Formik>
+    );
+};
+
+export default Newproperty;

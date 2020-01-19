@@ -1,24 +1,39 @@
-import React from "react"
-import './style.css'
+import React from "react";
+import "./style.css";
 
-function Tenant() {
-     return (
-       <CardContext.Consumer>
-         {({ image, handleBtnClick }) => (
-           <div
-             className="card"
-             style={{
-               backgroundImage: image ? `url(${image})` : "none"
-             }}
-           >
-             <CardTitle />
-             {!image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
-             <CardBtn style={{ opacity: image ? 1 : 0 }} onClick={handleBtnClick} data-value="back" />
-             <CardBtn style={{ opacity: image ? 1 : 0 }} onClick={handleBtnClick} data-value="next" />
-           </div>
-         )}
-       </CardContext.Consumer>
-     );
-   }
-   
- export const Tenant
+function TenantCard(props) {
+  return (
+    <div className="card">
+      <div className="img-container">
+        <img alt={props.name} src={props.image} />
+      </div>
+      <div className="content">
+        <ul>
+          <li>
+            <strong>Name:</strong> {props.name}
+          </li>
+          <li>
+            <strong>Rent:</strong> {props.rent}
+          </li>
+          <li>
+            <strong>Unit Number:</strong> {props.unit_no}
+          </li>
+          <li>
+            <strong>Current Rent rate:</strong> {props.rent_current}
+          </li>
+          <li>
+            <strong>Current Rent Status:</strong> {props.rent_status}
+          </li>
+          <li>
+            <strong>Apartment Issues:</strong> {props.issues}
+          </li>
+          <li>
+            <strong>Manager Comments:</strong> {props.mgr_comment}
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default TenantCard;

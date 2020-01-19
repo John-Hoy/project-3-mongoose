@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavBar } from '../../components/Navbar';
 import { Header } from '../../components/Header';
-
+import Building from '../../components/Building;'
 
 export default class Listing extends Component {
      constructor(props) {
