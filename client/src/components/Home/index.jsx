@@ -10,11 +10,36 @@ const HomeComponent = () => {
                             Welcome to Slumlords R Us!
                         </h1>
                         <h2 className="subtitle">
-                            We have the absolute finest listings in the area. Feel free to browse our newest listings.
+                            We have the absolute finest listings in the area.
                         </h2>
-                        <img src="images/shack.png" />
+                        <div className="">
+                    <div className="columns">
+                        <div className="column is-one-quarter">
+                           <img src="images/shack.png" alt="shack" />
+                        </div>
+                        <div className="column is-three-quarter">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
                     </div>
                 </div>
+                    </div>
+                </div>
+            </section>
+            <br />
+            <section>
+                <div className="">
+                    <div className="columns">
+                        <div className="column">
+                            <h2>Newest Listings...</h2>
+                        </div>
+                        <div className="column">
+                           <button>
+                               Login
+                           </button>
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
 
@@ -22,4 +47,4 @@ const HomeComponent = () => {
     );
 };
 
-export default HomeComponent
+export default HomeComponent;

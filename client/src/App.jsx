@@ -97,12 +97,13 @@ class App extends Component {
 				<Route
 					exact path="/listing"
 					render={() => <Building />
-					} />
+					} 
+				/>
 				<Route
 					exact path="/ManageTenants"
 					render={() => <AddTenant />}
 				/>
-								<Route
+				<Route
 					exact path="/Blacklist"
 					render={() => <BlackList />}
 				/>
