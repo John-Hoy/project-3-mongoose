@@ -43,11 +43,6 @@
 		"prod": "node server.js",
 		"heroku-postbuild": "npm run build",
 		"seed": "node utils/scripts/seeds.js"
-	},
-	"proxy": {
-		"/api/*": {
-			"target": "http://localhost:8081",
-			"secure": false
-		}
 	}
+	
 }
