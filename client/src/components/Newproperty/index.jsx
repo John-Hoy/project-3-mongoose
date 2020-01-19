@@ -70,3 +70,24 @@ const Newproperty = () => {
 };
 
 export default Newproperty;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
