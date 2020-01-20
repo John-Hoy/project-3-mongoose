@@ -9,6 +9,7 @@ import Building from './components/Building'
 import AddTenant from './components/AddTenant'
 // import Animation from './components/Animation'
 import BlackList from './pages/BlacklistPage'
+import TenantCard from './components/Tenant'
 
 class App extends Component {
 	constructor(props) {
@@ -106,6 +107,10 @@ class App extends Component {
 				<Route
 					exact path="/Blacklist"
 					render={() => <BlackList />}
+				/>
+				<Route
+					exact path="/api/tenants"
+					render={() => <TenantCard />}
 				/>
 			</div>
 		)
