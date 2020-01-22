@@ -55,6 +55,11 @@ function NavBarComponent({ loggedIn, _logout }) {
                             Log in
                         </Link>
                     </li>
+                    <li className="nav-item">
+                        <Link to="/resources" className="nav-link">
+                            Resources
+                        </Link>
+                    </li>
                 </ul>
             }
         </nav>
