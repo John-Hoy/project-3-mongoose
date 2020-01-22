@@ -7,7 +7,6 @@ import Home from './pages/Home'
 import { NavBar } from './components'
 import Building from './components/Building'
 import AddTenant from './components/AddTenant'
-// import Animation from './components/Animation'
 import BlackList from './pages/BlacklistPage'
 
 class App extends Component {
@@ -103,8 +102,9 @@ class App extends Component {
 				/>
 								<Route
 					exact path="/Blacklist"
-					render={() => <BlackList />}
+					render={() => <BlackList /> }
 				/>
+
 			</div>
 		)
 	}
