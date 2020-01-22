@@ -7,6 +7,7 @@ import Home from './components/Home'
 import { NavBar } from './components'
 import Building from './components/Building'
 import AddTenant from './components/AddTenant'
+import Newproperty from './components/Newproperty'
 import BlackList from './pages/BlacklistPage'
 import TenantCard from './components/Tenant'
 
@@ -102,6 +103,10 @@ class App extends Component {
 				<Route
 					exact path="/ManageTenants"
 					render={() => <AddTenant />}
+				/>
+				<Route
+					exact path="/ManageProperties"
+					render={() => <Newproperty />}
 				/>
 				<Route
 					exact path="/Blacklist"
