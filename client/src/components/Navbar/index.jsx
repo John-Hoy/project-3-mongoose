@@ -46,6 +46,12 @@ function NavBarComponent({ loggedIn, _logout }) {
                         </Link>
                     </li>
                     <li className="nav-item">
+                        <Link to="/ManageProperties" className="nav-link">
+                            Manage Properties
+                        </Link>
+                    </li>
+
+                    <li className="nav-item">
                         <Link to="/signup" className="nav-link">
                             Sign up
                         </Link>
