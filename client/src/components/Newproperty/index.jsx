@@ -1,7 +1,6 @@
-import React from './node_modules/react';
-import { Formik, Field, Form, ErrorMessage } from "./node_modules/formik";
-import * as Yup from "./node_modules/yup";
-import './style.css'
+import React from 'react';
+import { Formik, Field, Form, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
 const Newproperty = () => {
     return (
