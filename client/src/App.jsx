@@ -7,7 +7,6 @@ import Home from './components/Home'
 import { NavBar } from './components'
 import Building from './components/Building'
 import AddTenant from './components/AddTenant'
-// import Animation from './components/Animation'
 import BlackList from './pages/BlacklistPage'
 import TenantCard from './components/Tenant'
 
@@ -80,7 +79,7 @@ class App extends Component {
 					exact
 					path="/"
 					render={() =>
-						<Home />} 
+						<Home />}
 				/>
 				<Route
 					exact
@@ -98,7 +97,7 @@ class App extends Component {
 				<Route
 					exact path="/listing"
 					render={() => <Building />
-					} 
+					}
 				/>
 				<Route
 					exact path="/ManageTenants"
@@ -108,6 +107,7 @@ class App extends Component {
 					exact path="/Blacklist"
 					render={() => <BlackList />}
 				/>
+
 				<Route
 					exact path="/api/tenants"
 					render={() => <TenantCard />}

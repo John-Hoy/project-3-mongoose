@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { Redirect } from 'react-router-dom'
 import './signup.css';
+import Footer from "../../components/Footer";
 
 export default class SignupForm extends Component {
 	constructor() {
@@ -69,6 +70,7 @@ export default class SignupForm extends Component {
 					onChange={this.handleChange}
 				/>
 				<button onClick={this.handleSubmit}>Sign up</button>
+				<Footer/>
 			</div>
 		)
 	}
