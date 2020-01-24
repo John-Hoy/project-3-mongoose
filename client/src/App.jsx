@@ -10,6 +10,7 @@ import AddTenant from './components/AddTenant'
 import Newproperty from './components/Newproperty'
 import BlackList from './pages/BlacklistPage'
 import TenantCard from './components/Tenant'
+import Listing from './pages/BuildingListing'
 
 class App extends Component {
 	constructor(props) {
@@ -98,6 +99,11 @@ class App extends Component {
 				<Route
 					exact path="/listing"
 					render={() => <Building />
+					}
+				/>
+								<Route
+					exact path="/Test"
+					render={() => <Listing />
 					}
 				/>
 				<Route
