@@ -1,18 +1,17 @@
-const db = require("../models");
-const router = require("express").Router();
+const express = require('express')
+const Tenant = require('../models/tenant')
+const lodash = require ('lodash')
+const errorHandler= require ('../helpers/dbErrorHandler')
 
-// Read All tenants
-router.route("/api/tenants").get(function(req, res){
-    console.log(req.query)
-    db.Tenant
-        .find({})
-        .sort({ last_name: -1 })
-        .then(dbModel => {
-            console.log(dbModel)
-            res.json(dbModel)      
-        })
-        .catch(err => res.status(422).json(err));
-})
+const router = express.Router();
+
+// Read All Tenants
+const list = (req, res) => {
+    Tenant.find({}).then (tenants => {
+        
+        res.json(tenants)
+    })
+}
 
 // Create a tenant
 router.route("/api/tenants").post((req, res) => {
