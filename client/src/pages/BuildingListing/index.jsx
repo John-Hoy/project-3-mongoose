@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { NavBar } from '../../components/Navbar';
 import { Header } from '../../components/Header';
-import Building from '../../components/Building;'
+import Gallery from '../../components/Gallery';
+import Footer from '../../components/Footer';
 
 export default class Listing extends Component {
      constructor(props) {
@@ -13,27 +14,18 @@ export default class Listing extends Component {
      }
 
      componentDidMount() {
-          
+
      }
 
      render() {
-          if (this.props.user) {
-               return (
-                    <div className="listing">
-                         <NavBar styleProp={this.state.styleProp} />
-                         <Header user={this.state.user} />
-                         <h1> Gallery </h1>
-                    </div>
-               )
-          } else {
-               return (
-                    <div className="listing">
-                         <NavBar styleProp={this.state.styleProp} />
-                         <Header user={this.state.user} />
-                         <h1> Gallery </h1>
-                    </div>
-               )
-          }
+          return (
+          <div>
+               <Header />
+               <NavBar />
+               <Gallery />
+               <Footer />
+          </div>
+          )
      }
 
-}
+};

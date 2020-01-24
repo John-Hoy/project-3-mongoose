@@ -3,14 +3,14 @@ import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
  
 class Gallery extends React.Component {
-  state = {
-    galleryItems: [1, 2, 3].map((i) => <h2 key={i}>{i}</h2>),
-  }
+//   state = {
+//     galleryItems: [1, 2, 3].map((i) => <h2 key={i}>{i}</h2>),
+//   }
  
-  responsive = {
-    0: { items: 1 },
-    1024: { items: 2 },
-  }
+//   responsive = {
+//     0: { items: 1 },
+//     1024: { items: 2 },
+//   }
  
   onSlideChange(e) {
     console.debug('Item`s position during a change: ', e.item)
