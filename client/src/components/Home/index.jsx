@@ -1,4 +1,5 @@
 import React from 'react';
+import './home.css';
 
 const HomeComponent = () => {
     return (
@@ -33,9 +34,7 @@ const HomeComponent = () => {
                             <h2>Newest Listings...</h2>
                         </div>
                         <div className="column">
-                           <button>
-                               Login
-                           </button>
+                           <p>More content to go here</p>
                         </div>
                     </div>
                 </div>

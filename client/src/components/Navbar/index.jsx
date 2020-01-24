@@ -17,50 +17,48 @@ function NavBarComponent({ loggedIn, _logout }) {
 
                 <div id="navbarBasicExample" className="navbar-menu">
                     <div className="navbar-start nav_root">
-                        <a className="navbar-item">
+                        <a className="navbar-item" href="/">
                             Home
                         </a>
 
-                        <a className="navbar-item">
+                        <a className="navbar-item" href="listing">
                             Listings
                         </a>
 
-                        <a className="navbar-item">
+                        <a className="navbar-item" href="/Contact">
                             Contact
                          </a>
 
-                         <a className="navbar-item">
+                         <a className="navbar-item" href="/Resources">
                             Resources
                          </a>
 
                         <div className="navbar-item has-dropdown is-hoverable">
-                            <a className="navbar-link">
+                            <a className="navbar-link navbar-drop">
                                 Manage
                             </a>
 
                             <div className="navbar-dropdown">
-                                <a className="navbar-item">
+                                <a className="navbar-item" href="/ManageTenants">
                                     Tenants
                                 </a>
-                                <a className="navbar-item">
+                                <a className="navbar-item" href="/ManageTenants">
                                     Properties
                                 </a>
-                                <a className="navbar-item">
-                                    Contact
-                                </a>
+                                
                                 <hr className="navbar-divider" />
                                     <a className="navbar-item">
                                         Report an issue
                                     </a>
                              </div>
                         </div>
-                        </div>
+                    </div>
 
                         <div className="navbar-end">
                             <div className="navbar-item">
                                 <div className="buttons">
-                                    <a className="button is-primary">
-                                        <strong>Sign up</strong>
+                                    <a className="button">
+                                        Sign up
                                     </a>
                                     <a className="button is-light">
                                         Log in
