@@ -11,6 +11,8 @@ import Newproperty from './components/Newproperty'
 import BlackList from './pages/BlacklistPage'
 import TenantCard from './components/Tenant'
 import Listing from './pages/BuildingListing'
+import Footer from './components/Footer'
+
 
 class App extends Component {
 	constructor(props) {
@@ -76,6 +78,7 @@ class App extends Component {
 					_logout={this._logout}
 					loggedIn={this.state.loggedIn}
 				/>
+				<Footer />
 				{/*  Individual Things */}
 				<Route
 					exact
