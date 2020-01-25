@@ -42,7 +42,7 @@ function NavBarComponent({ loggedIn, _logout }) {
                             <a className="navbar-item" href="/ManageTenants">
                                 Tenants
                                 </a>
-                            <a className="navbar-item" href="/Properties">
+                            <a className="navbar-item" href="/ManageProperties">
                                 Properties
                                 </a>
 
