@@ -7,7 +7,7 @@ import HomePage from './pages/Home'
 import { NavBar } from './components'
 import Building from './components/Building'
 import AddTenant from './components/AddTenant'
-
+import ContactForm from './components/ContactForm'
 import Newproperty from './components/Newproperty'
 import BlackList from './pages/BlacklistPage'
 import TenantCard from './components/Tenant'
@@ -128,6 +128,10 @@ class App extends Component {
 				<Route
 					exact path="/api/tenants"
 					render={() => <TenantCard />}
+				/>
+				<Route 
+					exact path="/Contact"
+					render={() => <ContactForm />}
 				/>
 				{/* {db.properties.mapi((item, index) => {
 					return <PropertyCard key={index} data={item}/>
