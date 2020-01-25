@@ -3,12 +3,12 @@ import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
  
 class Gallery extends React.Component {
-//   state = {
-//     galleryItems: [1, 2, 3].map((i) => <h2 key={i}>{i}</h2>),
-//   }
- 
+  state = {
+    galleryItems: ["./images/balcony.jpg","./images/kitchen.jpg","./images/outside.jpg","./images/bathroom.jpg","./apartment-inside.jpg"].map((i) => <h2 key={i}>{i}</h2>),
+  }
+
 //   responsive = {
-//     0: { items: 1 },
+//     0: { items: 3 },
 //     1024: { items: 2 },
 //   }
  

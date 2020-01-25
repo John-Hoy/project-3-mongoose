@@ -5,16 +5,16 @@ import LoginForm from './pages/LoginForm'
 import SignupForm from './pages/SignupForm'
 import HomePage from './pages/Home'
 import { NavBar } from './components'
-import Building from './components/Building'
+// import Building from './components/Building'
 import AddTenant from './components/AddTenant'
 import ContactForm from './components/ContactForm'
 import Newproperty from './components/Newproperty'
 import BlackList from './pages/BlacklistPage'
 import TenantCard from './components/Tenant'
-import Listing from './pages/BuildingListing'
+// import Listing from './pages/BuildingListing'
 import Footer from './components/Footer'
 // import {db} from './db/db'
-
+import Gallery from './components/Gallery'
 
 class App extends Component {
 	constructor(props) {
@@ -104,12 +104,12 @@ class App extends Component {
 				/>
 				<Route
 					exact path="/listing"
-					render={() => <Building title="Slumlords R Us - Listings"/>
+					render={() => <Gallery title="Slumlords R Us - Listings"/>
 					}
 				/>
 				<Route
 					exact path="/Test"
-					render={() => <Listing />
+					render={() => <Gallery />
 					}
 				/>
 				<Route

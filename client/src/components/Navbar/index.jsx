@@ -47,7 +47,7 @@ function NavBarComponent({ loggedIn, _logout }) {
                                 </a>
 
                             <hr className="navbar-divider" />
-                            <a className="navbar-item">
+                            <a className="navbar-item" href="/issues">
                                 Report an issue
                                     </a>
                         </div>
