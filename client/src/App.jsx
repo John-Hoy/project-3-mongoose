@@ -13,6 +13,7 @@ import BlackList from './pages/BlacklistPage'
 import TenantCard from './components/Tenant'
 // import Listing from './pages/BuildingListing'
 import Footer from './components/Footer'
+import Resources from './pages/Resources'
 // import {db} from './db/db'
 import Gallery from './components/Gallery'
 
@@ -128,6 +129,10 @@ class App extends Component {
 				<Route
 					exact path="/api/tenants"
 					render={() => <TenantCard />}
+				/>
+				<Route
+				exact path="/Resources"
+				render={() => <Resources title="Slumlords R Us - Resources"/>}
 				/>
 				<Route 
 					exact path="/Contact"
