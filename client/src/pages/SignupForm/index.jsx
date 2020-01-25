@@ -55,6 +55,8 @@ export default class SignupForm extends Component {
 					value={this.state.username}
 					onChange={this.handleChange}
 				/>
+				<br />
+				<br />
 				<label htmlFor="password">Password: </label>
 				<input
 					type="password"
@@ -62,6 +64,8 @@ export default class SignupForm extends Component {
 					value={this.state.password}
 					onChange={this.handleChange}
 				/>
+				<br />
+				<br />
 				<label htmlFor="confirmPassword">Confirm Password: </label>
 				<input
 					type="password"
@@ -69,6 +73,8 @@ export default class SignupForm extends Component {
 					value={this.state.confirmPassword}
 					onChange={this.handleChange}
 				/>
+				<br />
+				<br />
 				<button onClick={this.handleSubmit}>Sign up</button>
 				<Footer/>
 			</div>

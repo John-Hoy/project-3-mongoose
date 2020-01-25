@@ -7,10 +7,10 @@ export default class Footer extends Component {
             <div className="footer_root">
                 <div className="footerWrapper">
                     <div className="links">
-                        <div><p>links here</p></div>
+                        {/* links here */}
                     </div>
                     <div className="copyrightWrapper">
-                        <p className="copyright">Copyright &copy; 2020 ATAB INC All rights reserved.</p>
+                        <p className="copyright">Copyright &copy; 2020 Slumlords R Us all rights reserved.</p>
                     </div>
                 </div>
             </div>
