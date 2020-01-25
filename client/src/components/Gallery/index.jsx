@@ -1,16 +1,18 @@
 import React from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
- 
+// import Pictures from './images'
+
 class Gallery extends React.Component {
   state = {
-    galleryItems: ["./images/balcony.jpg","./images/kitchen.jpg","./images/outside.jpg","./images/bathroom.jpg","./apartment-inside.jpg"].map((i) => <h2 key={i}>{i}</h2>),
+//      galleryItems: [Pictures[0],Pictures[1],Pictures[2]].map((i) => <h2 key={i}>{i}</h2>),
+    galleryItems: [`./images/balcony.jpg`,"./images/kitchen.jpg","./images/outside.jpg","./images/bathroom.jpg","./apartment-inside.jpg","./images/pool.jpg","./images/fridge.jpg"].map((i) => <h2 key={i}>{i}</h2>),
   }
 
-//   responsive = {
-//     0: { items: 3 },
-//     1024: { items: 2 },
-//   }
+  responsive = {
+    0: { items: 1 },
+    1024: { items: 3 },
+  }
  
   onSlideChange(e) {
     console.debug('Item`s position during a change: ', e.item)
