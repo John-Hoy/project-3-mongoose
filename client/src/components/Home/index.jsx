@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css';
 
+
 const HomeComponent = () => {
     return (
         <div className="">
@@ -32,6 +33,7 @@ const HomeComponent = () => {
                     <div className="columns">
                         <div className="column">
                             <h2>Newest Listings...</h2>
+                            
                         </div>
                         <div className="column">
                            <p>More content to go here</p>
