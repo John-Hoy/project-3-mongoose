@@ -87,7 +87,7 @@ class App extends Component {
 					exact
 					path="/"
 					render={() =>
-						<HomePage />}
+						<HomePage title="Slumlords R Us - Home"/>}
 				/>
 				<Route
 					exact
@@ -104,10 +104,10 @@ class App extends Component {
 				/>
 				<Route
 					exact path="/listing"
-					render={() => <Building />
+					render={() => <Building title="Slumlords R Us - Listings"/>
 					}
 				/>
-								<Route
+				<Route
 					exact path="/Test"
 					render={() => <Listing />
 					}
@@ -118,11 +118,11 @@ class App extends Component {
 				/>
 				<Route
 					exact path="/ManageProperties"
-					render={() => <Newproperty />}
+					render={() => <Newproperty title="Slumlords R Us - Manage Properties"/>}
 				/>
 				<Route
 					exact path="/Blacklist"
-					render={() => <BlackList />}
+					render={() => <BlackList title="Slumlords R Us - Blacklist"/>}
 				/>
 
 				<Route
@@ -131,7 +131,7 @@ class App extends Component {
 				/>
 				<Route 
 					exact path="/Contact"
-					render={() => <ContactForm />}
+					render={() => <ContactForm title="Slumlords R Us - Contact Us"/>}
 				/>
 				{/* {db.properties.mapi((item, index) => {
 					return <PropertyCard key={index} data={item}/>

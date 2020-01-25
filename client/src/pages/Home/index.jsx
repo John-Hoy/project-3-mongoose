@@ -5,7 +5,7 @@ import Home from '../../components/Home'
 function HomePage() {
   return (
         <div className="">
-            <Home />
+            <Home title="Slumlords R Us - Home"/>
 	        </div>
   )
 }
