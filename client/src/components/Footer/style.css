@@ -7,4 +7,22 @@
      color: white;
      border-top: 2px solid #e5c553;
      text-align: center;
+     display: flex;
+     text-transform: uppercase;
+     list-style-type: none;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 1.1em;
+     font-weight: 700;
+     width: 100%;
+     height: auto;
+     padding: 1em;
+   }
+
+   .footer_root p {
+     margin-left: 400px;
+     text-align: center;
+    color: #e55753;
+    text-decoration: none;
+    padding: 4px;
+        padding-right: 10px;
    }

@@ -1,42 +1,13 @@
-import React, { Component } from 'react'
-import { Header } from '../../components'
-import "./home.css"
-import Footer from '../../components/Footer'
-export default class Home extends Component {
-	constructor(props) {
-		super(props)
-		this.state = {
-			user: props.user
-		}
-	}
+import React from 'react';
+import Home from '../../components/Home'
 
-	componentDidMount() {
-		console.log("Home Component Mounted")
-	}
 
-	render() {
-		if (this.props.user) {
-			return (
-				<div className="Home">
-					<Header user={this.state.user} />
-					<p>Current User:</p>
-					<code>
-						{JSON.stringify(this.props)}
-					</code>
-				</div>
-			)
-		} else {
-			return (
-				<div className="Home">
-					<Header user={this.state.user} />
-					<p>Current User:</p>
-					<code>
-						{JSON.stringify(this.props)}
-					</code>
-					<Footer />
-				</div>
-			)
-		}
-	}
-
+function HomePage() {
+  return (
+        <div className="">
+            <Home />
+	        </div>
+  )
 }
+
+export default HomePage;

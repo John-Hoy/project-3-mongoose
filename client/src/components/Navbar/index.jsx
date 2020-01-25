@@ -42,7 +42,7 @@ function NavBarComponent({ loggedIn, _logout }) {
                                 <a className="navbar-item" href="/ManageTenants">
                                     Tenants
                                 </a>
-                                <a className="navbar-item" href="/ManageTenants">
+                                <a className="navbar-item" href="/Properties">
                                     Properties
                                 </a>
                                 
@@ -57,10 +57,10 @@ function NavBarComponent({ loggedIn, _logout }) {
                         <div className="navbar-end">
                             <div className="navbar-item">
                                 <div className="buttons">
-                                    <a className="button">
+                                    <a className="button" href="/signup">
                                         Sign up
                                     </a>
-                                    <a className="button is-light">
+                                    <a className="button is-light" href="/login">
                                         Log in
                                      </a>
                                 </div>
