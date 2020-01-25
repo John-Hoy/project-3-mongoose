@@ -39,7 +39,9 @@ export default class LoginForm extends Component {
 		} else {
 			return (
 				<div className="LoginForm">
-					<h1>Login form</h1>
+					<h1>Log In</h1>
+					<p>Log in with username and password, or login with your Google account</p>
+					<br />
 					<form>
 						<label htmlFor="username">Username: </label>
 						<input
@@ -48,6 +50,8 @@ export default class LoginForm extends Component {
 							value={this.state.username}
 							onChange={this.handleChange}
 						/>
+						<br />
+						<br />
 						<label htmlFor="password">Password: </label>
 						<input
 							type="password"
@@ -55,8 +59,14 @@ export default class LoginForm extends Component {
 							value={this.state.password}
 							onChange={this.handleChange}
 						/>
+						<br />
+						<br />
 						<button onClick={this.handleSubmit}>Login</button>
 					</form>
+					<br />
+					<h3>OR</h3>
+						<br />
+						
 					<a href="/auth/google">
 						{/* <GoogleButton /> */}
 						<img src={googleButton} alt="sign into Google Button" />

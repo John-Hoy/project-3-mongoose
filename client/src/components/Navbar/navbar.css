@@ -11,7 +11,7 @@
      width: 100%;
      height: auto;
      padding: 1em;
-    border-bottom: 2px solid #e5c553; }
+    border-bottom: 2px solid #e55753; }
      .nav_root li {
        border-right: 1px dashed #f1f1f1;
        padding: .25em .5em; }
@@ -21,7 +21,29 @@
        color: #e55753;
        text-decoration: none;
        padding: 4px;
-       margin: .25em; }
+       margin: .25em;
+       padding-right: 10px;
+      border-right: 1px dashed #fff; }
        .nav_root a:hover {
+         color: #000;
+         background-color: #53d3e5;
+       }
+
+       .navbar-end {
+        border-bottom: 2px solid #e55753;
+         background-color: #53d3e5;
+       }
+
+       .button {
          color: #fff;
+         background-color: #a653e5;
+       }
+
+       .navbar-drop {
+         color: #e57c53;
+         background-color: #53d3e5;
+       }
+
+       .navbar-drop a:hover {
+         background-color: #53d3e5;
        }

@@ -1,78 +1,72 @@
 import React from "react"
-import { Link } from 'react-router-dom'
 import './navbar.css'
 
 function NavBarComponent({ loggedIn, _logout }) {
     return (
-        <nav className="">
-            {loggedIn ?
-                <ul className="nav_root">
-                    <li className="nav-item">
-                        <Link to="/" className="nav-link">
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/Listings" className="nav-link">
-                            Building listings
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="#" className="nav-link" onClick={_logout}>
-                            Logout
-                        </Link>
-                    </li>
-                </ul>
-                :
-                <ul className="nav_root">
-                    <li className="nav-item">
-                        <Link to="/" className="nav-link">
-                            Home
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/listing" className="nav-link">
-                            Building listings
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/Blacklist" className="nav-link">
-                            Black list
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/ManageTenants" className="nav-link">
-                            Manage Tenants
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/ManageProperties" className="nav-link">
-                            Manage Properties
-                        </Link>
-                    </li>
 
-                    <li className="nav-item">
-                        <Link to="/signup" className="nav-link">
-                            Sign up
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/login" className="nav-link">
-                            Log in
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/resources" className="nav-link">
-                            Resources
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/Test" className="nav-link">
-                            Test page
-                        </Link>
-                    </li>
-                </ul>
-            }
+        <nav className="navbar" aria-label="main navigation">
+            <div className="navbar-brand">
+
+
+                <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" className="navbar-menu">
+                <div className="navbar-start nav_root">
+                    <a className="navbar-item" href="/">
+                        Home
+                        </a>
+
+                    <a className="navbar-item" href="listing">
+                        Listings
+                        </a>
+
+                    <a className="navbar-item" href="/Contact">
+                        Contact
+                         </a>
+
+                    <a className="navbar-item" href="/Resources">
+                        Resources
+                         </a>
+
+                    <div className="navbar-item has-dropdown is-hoverable">
+                        <a className="navbar-link navbar-drop">
+                            Manage
+                            </a>
+
+                        <div className="navbar-dropdown">
+                            <a className="navbar-item" href="/ManageTenants">
+                                Tenants
+                                </a>
+                            <a className="navbar-item" href="/Properties">
+                                Properties
+                                </a>
+
+                            <hr className="navbar-divider" />
+                            <a className="navbar-item">
+                                Report an issue
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="navbar-end">
+                    <div className="navbar-item">
+                        <div className="buttons">
+                            <a className="button" href="/signup">
+                                Sign up
+                                    </a>
+                            <a className="button is-light" href="/login">
+                                Log in
+                                     </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     )
 }

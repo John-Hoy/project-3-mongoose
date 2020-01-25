@@ -3,19 +3,24 @@ import axios from 'axios'
 import { Route } from 'react-router-dom'
 import LoginForm from './pages/LoginForm'
 import SignupForm from './pages/SignupForm'
-import Home from './components/Home'
+import HomePage from './pages/Home'
 import { NavBar } from './components'
 import Building from './components/Building'
 import AddTenant from './components/AddTenant'
+import ContactForm from './components/ContactForm'
 import Newproperty from './components/Newproperty'
 import BlackList from './pages/BlacklistPage'
 import TenantCard from './components/Tenant'
 import Listing from './pages/BuildingListing'
+import Footer from './components/Footer'
+// import {db} from './db/db'
+
 
 class App extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
+			current: 1,
 			loggedIn: false,
 			user: null
 		}
@@ -76,12 +81,13 @@ class App extends Component {
 					_logout={this._logout}
 					loggedIn={this.state.loggedIn}
 				/>
+				<Footer />
 				{/*  Individual Things */}
 				<Route
 					exact
 					path="/"
 					render={() =>
-						<Home />}
+						<HomePage title="Slumlords R Us - Home"/>}
 				/>
 				<Route
 					exact
@@ -98,10 +104,10 @@ class App extends Component {
 				/>
 				<Route
 					exact path="/listing"
-					render={() => <Building />
+					render={() => <Building title="Slumlords R Us - Listings"/>
 					}
 				/>
-								<Route
+				<Route
 					exact path="/Test"
 					render={() => <Listing />
 					}
@@ -112,17 +118,24 @@ class App extends Component {
 				/>
 				<Route
 					exact path="/ManageProperties"
-					render={() => <Newproperty />}
+					render={() => <Newproperty title="Slumlords R Us - Manage Properties"/>}
 				/>
 				<Route
 					exact path="/Blacklist"
-					render={() => <BlackList />}
+					render={() => <BlackList title="Slumlords R Us - Blacklist"/>}
 				/>
 
 				<Route
 					exact path="/api/tenants"
 					render={() => <TenantCard />}
 				/>
+				<Route 
+					exact path="/Contact"
+					render={() => <ContactForm title="Slumlords R Us - Contact Us"/>}
+				/>
+				{/* {db.properties.mapi((item, index) => {
+					return <PropertyCard key={index} data={item}/>
+				})} */}
 			</div>
 		)
 	}
