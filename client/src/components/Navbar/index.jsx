@@ -8,7 +8,7 @@ function NavBarComponent({ loggedIn, _logout }) {
             <div className="navbar-brand">
 
 
-                <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <a href="/" role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -21,7 +21,7 @@ function NavBarComponent({ loggedIn, _logout }) {
                         Home
                         </a>
 
-                    <a className="navbar-item" href="listing">
+                    <a className="navbar-item" href="/listing">
                         Listings
                         </a>
 
@@ -34,7 +34,7 @@ function NavBarComponent({ loggedIn, _logout }) {
                          </a>
 
                     <div className="navbar-item has-dropdown is-hoverable">
-                        <a className="navbar-link navbar-drop">
+                        <a className="navbar-link navbar-drop" href="/ManageTenants">
                             Manage
                             </a>
 
