@@ -20,20 +20,32 @@ const HomeComponent = () => {
                                     <img src="images/shack.png" alt="shack" />
                                 </div>
                                 <div className="column is-three-quarter">
-
-                                    <p>Welcome to the homepage of our app. From here, you can <a href="/ManageTenants"> manage tenants</a>, <a href="/Properties">add properties</a>, <a href="/Contact">contact us</a>, or find <a href="/Resources"> valuable resources.</a> If you are a tenant, you can let your landord know of any <a href="/Issues">issues</a> you may have, download a <a href="/lease"> rental agreement form</a> or find relevant information regarding rental laws in your state.</p>
-
-
-                                    <p>Welcome to the homepage of our app. From here, you can <a href="/ManageTenants"> manage tenants</a>, <a href="/">add properties</a>, <a href="/Contact">contact us</a>, or find <a href="/Resources"> valuable resources.</a> If you are a tenant, you can let your landlord know of any <a href="/Issues">issues</a> you may have, download a <a href="/Agreement"> rental agreement form</a> or find relevant information regarding rental laws in your state.</p>
+                                    <p>Welcome to the homepage of our app. From here, you can <a href="/ManageTenants"> manage tenants</a>, <a href="/">add properties</a>, <a href="/Contact">contact us</a>, or find <a href="/Resources"> valuable resources.</a> If you are a tenant, you can let your landord know of any <a href="/Issues">issues</a> you may have, download a <a href="#"> rental agreement form</a> or find relevant information regarding rental laws in your state.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <br />
+            <section>
+                <div className="">
+                    <div className="columns">
+                        <div className="column">
+                            <h2>Newest Listings...</h2>
+
+                        </div>
+                        <div className="column">
+                            <p>More content to go here</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
         </div>
-
-
     );
 };
+
 export default HomeComponent;
