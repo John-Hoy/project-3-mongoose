@@ -33,4 +33,4 @@ class Upload extends Component {
      }
 }
 
-default export Upload
+export default Upload;

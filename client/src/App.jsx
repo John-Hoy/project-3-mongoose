@@ -15,7 +15,7 @@ import Resources from './pages/Resources'
 // import {db} from './db/db'
 import Gallery from './components/Gallery'
 import Dropzone from './components/Upload/index'
-import Property from './components/Property'
+import PropertyCard from './components/Property'
 
 class App extends Component {
 	constructor(props) {
@@ -135,10 +135,14 @@ class App extends Component {
 					render={() => <TenantCard />}
 				/>
 				<Route
-				exact path="/Resources"
-				render={() => <Resources title="Slumlords R Us - Resources"/>}
+					exact path="/Properties"
+					render={() => <PropertyCard />}
 				/>
-				<Route 
+				<Route
+					exact path="/Resources"
+					render={() => <Resources title="Slumlords R Us - Resources" />}
+				/>
+				<Route
 					exact path="/Contact"
 					render={() => <ContactForm title="Slumlords R Us - Contact Us" />}
 				/>

@@ -5,7 +5,7 @@ function NavBarComponent({ loggedIn, _logout }) {
     return (
 
         <nav className="navbar" aria-label="main navigation">
-            <div className="navbar-brand">
+            {/* <div className="navbar-brand">
 
 
                 <div role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -13,7 +13,7 @@ function NavBarComponent({ loggedIn, _logout }) {
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </div>
-            </div>
+            </div> */}
 
             <div id="navbarBasicExample" className="navbar-menu">
                 <div className="navbar-start nav_root">
