@@ -12,8 +12,8 @@ import BlackList from './pages/BlacklistPage'
 import TenantCard from './components/Tenant'
 import Footer from './components/Footer'
 import Resources from './pages/Resources'
+// import {db} from './db/db'
 import Gallery from './components/Gallery'
-import Property from './components/Property'
 
 class App extends Component {
 	constructor(props) {
@@ -119,11 +119,6 @@ class App extends Component {
 					exact path="/ManageProperties"
 					render={() => <Newproperty title="Slumlords R Us - Manage Properties"/>}
 				/>
-				<Route 
-				exact path="/Properties"
-				render={() => <Property />
-				}
-				/>
 				<Route
 					exact path="/Blacklist"
 					render={() => <BlackList title="Slumlords R Us - Blacklist"/>}
@@ -141,7 +136,9 @@ class App extends Component {
 					exact path="/Contact"
 					render={() => <ContactForm title="Slumlords R Us - Contact Us"/>}
 				/>
-				
+				{/* {db.properties.mapi((item, index) => {
+					return <PropertyCard key={index} data={item}/>
+				})} */}
 			</div>
 		)
 	}
