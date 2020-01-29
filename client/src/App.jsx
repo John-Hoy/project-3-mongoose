@@ -13,6 +13,7 @@ import TenantCard from './components/Tenant'
 import Footer from './components/Footer'
 // import {db} from './db/db'
 import Gallery from './components/Gallery'
+import Dropzone from './components/Upload/index'
 
 class App extends Component {
 	constructor(props) {
@@ -85,7 +86,7 @@ class App extends Component {
 					exact
 					path="/"
 					render={() =>
-						<HomePage title="Slumlords R Us - Home"/>}
+						<HomePage title="Slumlords R Us - Home" />}
 				/>
 				<Route
 					exact
@@ -101,8 +102,12 @@ class App extends Component {
 					component={SignupForm}
 				/>
 				<Route
+					exact path="/resources"
+					render={() => <Dropzone />}
+				/>
+				<Route
 					exact path="/listing"
-					render={() => <Gallery title="Slumlords R Us - Listings"/>
+					render={() => <Gallery title="Slumlords R Us - Listings" />
 					}
 				/>
 				<Route
@@ -116,20 +121,20 @@ class App extends Component {
 				/>
 				<Route
 					exact path="/ManageProperties"
-					render={() => <Newproperty title="Slumlords R Us - Manage Properties"/>}
+					render={() => <Newproperty title="Slumlords R Us - Manage Properties" />}
 				/>
 				<Route
 					exact path="/Blacklist"
-					render={() => <BlackList title="Slumlords R Us - Blacklist"/>}
+					render={() => <BlackList title="Slumlords R Us - Blacklist" />}
 				/>
 
 				<Route
 					exact path="/api/tenants"
 					render={() => <TenantCard />}
 				/>
-				<Route 
+				<Route
 					exact path="/Contact"
-					render={() => <ContactForm title="Slumlords R Us - Contact Us"/>}
+					render={() => <ContactForm title="Slumlords R Us - Contact Us" />}
 				/>
 				{/* {db.properties.mapi((item, index) => {
 					return <PropertyCard key={index} data={item}/>
