@@ -9,18 +9,54 @@ const ResourceComponent = () => {
                 <div className="hero-body">
                     <div className="container">
                         <h1 className="title">
-                            Welcome to Slumlords R Us!
+                            Resources
                         </h1>
                         <h2 className="subtitle">
-                            We have the absolute finest listings in the area.
+                            Here are some relevant links for both Tenants and Landlords
                         </h2>
                         <div className="">
                     <div className="columns">
-                        <div className="column is-one-quarter">
-                           <img src="images/shack.png" alt="shack" />
+                        <div className="column is-one-half">
+                        <h3 className="subtitle">Tenants</h3>
+
+                        <ul>
+                            <li>
+                                <a href="https://realestate.findlaw.com/landlord-tenant-law/tenant-rights.html" target="_blank" rel="noopener noreferrer">Tenant Rights</a>
+                            </li>
+                        </ul>
+                        <br />
+                        <h3 className="subtitle">Sample Letters</h3>
+                        <ul>
+                            <li>
+                                <a href="http://d3n8a8pro7vhmx.cloudfront.net/tenantresourcecenter/pages/58/attachments/original/1380043053/roommate_agreement_form.pdf?1380043053" target="_blank" rel="noopener noreferrer">Roommate Agreement</a>
+                                <br />
+                                <a href="https://d3n8a8pro7vhmx.cloudfront.net/tenantresourcecenter/pages/211/attachments/original/1426623393/Sample_Letter_-_Breaking_Lease.docx?1426623393" target="_blank" rel="noopener noreferrer">Breaking a Lease</a>
+                                <br />
+                                <a href="http://d3n8a8pro7vhmx.cloudfront.net/tenantresourcecenter/pages/58/attachments/original/1380043053/roommate_agreement_form.pdf?1380043053" target="_blank" rel="noopener noreferrer">Roommate Agreement</a>
+                                <br />
+                                <a href="http://d3n8a8pro7vhmx.cloudfront.net/tenantresourcecenter/pages/58/attachments/original/1380043057/security_deposit_letter.pdf?1380043057" target="_blank" rel="noopener noreferrer">Wrongfully Withheld Security Deposit</a>
+                                <br />
+                                <a href="https://www.tenantresourcecenter.org/landlord_references" target="_blank" rel="noopener noreferrer">Reply to Eviction Notice Over Non-Payment of Rent</a>
+                                <br />
+                                <a href="https://d3n8a8pro7vhmx.cloudfront.net/tenantresourcecenter/pages/203/attachments/original/1423585024/Sample_Letter_-_Eviction_Notice_Breach.docx?1423585024">Reply to Eviction Notice Over Rules Violations</a>
+                            </li>
+                        </ul>
                         </div>
-                        <div className="column is-three-quarter">
-                            <p>Welcome to the homepage of our app. From here, you can <a href="/ManageTenants"> manage tenants</a>, <a href="/">add properties</a>, <a href="/Contact">contact us</a>, or find <a href="/Resources"> valuable resources.</a> If you are a tenant, you can let your landord know of any <a href="/Issues">issues</a> you may have, download a <a href="#"> rental agreement form</a> or find relevant information regarding rental laws in your state.</p>
+                        <div className="column is-one-half">
+                        <h3 className="subtitle">Landlords</h3>
+                        <ul>
+                            <li>
+                                <a href="https://realestate.findlaw.com/landlord-tenant-law/eviction.html" target="_blank" rel="noopener noreferrer">Eviction</a>
+                                <br />
+                                <a href="https://realestate.findlaw.com/landlord-tenant-law/landlord-rights.html" target="_blank" rel="noopener noreferrer">Landlord Rights</a>
+                                <br />
+                                <a href="https://realestate.findlaw.com/landlord-tenant-law/landlord-tenant-disputes.html" target="_blank" rel="noopener noreferrer">Landlord/Tenant Diputes</a>
+                                <br />
+                                <a href="https://realestate.findlaw.com/landlord-tenant-law/rent-security-deposits.html" target="_blank" rel="noopener noreferrer">Rent and Security Deposits</a>
+                                <br />
+                                <a href="https://realestate.findlaw.com/landlord-tenant-law/rental-lease-agreements.html" target="_blank" rel="noopener noreferrer">Rental and Lease Agreements</a>
+                            </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -28,7 +64,7 @@ const ResourceComponent = () => {
                 </div>
             </section>
             <br />
-            <section>
+            {/* <section>
                 <div className="">
                     <div className="columns">
                         <div className="column">
@@ -41,7 +77,7 @@ const ResourceComponent = () => {
                     </div>
                 </div>
 
-            </section>
+            </section> */}
 
 
         </div>
