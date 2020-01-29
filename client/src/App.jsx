@@ -13,6 +13,7 @@ import TenantCard from './components/Tenant'
 import Footer from './components/Footer'
 import Resources from './pages/Resources'
 import Gallery from './components/Gallery'
+import Dropzone from './components/Upload/index'
 import Property from './components/Property'
 
 class App extends Component {
@@ -86,7 +87,7 @@ class App extends Component {
 					exact
 					path="/"
 					render={() =>
-						<HomePage title="Slumlords R Us - Home"/>}
+						<HomePage title="Slumlords R Us - Home" />}
 				/>
 				<Route
 					exact
@@ -102,8 +103,12 @@ class App extends Component {
 					component={SignupForm}
 				/>
 				<Route
+					exact path="/resources"
+					render={() => <Dropzone />}
+				/>
+				<Route
 					exact path="/listing"
-					render={() => <Gallery title="Slumlords R Us - Listings"/>
+					render={() => <Gallery title="Slumlords R Us - Listings" />
 					}
 				/>
 				<Route
@@ -117,7 +122,7 @@ class App extends Component {
 				/>
 				<Route
 					exact path="/ManageProperties"
-					render={() => <Newproperty title="Slumlords R Us - Manage Properties"/>}
+					render={() => <Newproperty title="Slumlords R Us - Manage Properties" />}
 				/>
 				<Route 
 				exact path="/Properties"
@@ -126,7 +131,7 @@ class App extends Component {
 				/>
 				<Route
 					exact path="/Blacklist"
-					render={() => <BlackList title="Slumlords R Us - Blacklist"/>}
+					render={() => <BlackList title="Slumlords R Us - Blacklist" />}
 				/>
 
 				<Route
@@ -139,7 +144,7 @@ class App extends Component {
 				/>
 				<Route 
 					exact path="/Contact"
-					render={() => <ContactForm title="Slumlords R Us - Contact Us"/>}
+					render={() => <ContactForm title="Slumlords R Us - Contact Us" />}
 				/>
 				
 			</div>
