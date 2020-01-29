@@ -35,7 +35,7 @@ const HomeComponent = () => {
                         </div>
                     </div>
                 </div>
-                <br />
+                <br/>
                 <section>
                     <div className="">
                         <div className="columns">
