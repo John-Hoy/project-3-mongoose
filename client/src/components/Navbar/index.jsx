@@ -8,15 +8,17 @@ function NavBarComponent({ loggedIn, _logout }) {
             <div className="navbar-brand">
 
 
-                <a href="/" role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <div role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                
+                    <a role="button" href="/" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
 
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </div>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
             </div>
 
+                
+            
             <div id="navbarBasicExample" className="navbar-menu">
                 <div className="navbar-start nav_root">
                     <a className="navbar-item" href="/">
@@ -35,40 +37,36 @@ function NavBarComponent({ loggedIn, _logout }) {
                         Resources
                          </a>
 
-                    <div className="navbar-item has-dropdown is-hoverable">
-                      
-                        <a className="navbar-link navbar-drop" href="/ManageTenants">
-
-                        <div className="navbar-link navbar-drop">
-
+                         <div className="navbar-item has-dropdown is-hoverable">
+                            <a className="navbar-link" href="/">
                             Manage
-                            </div>
+                            </a>
 
-                        <div className="navbar-dropdown">
+                            <div className="navbar-dropdown">
                             <a className="navbar-item" href="/ManageTenants">
                                 Tenants
-                                </a>
+                            </a>
                             <a className="navbar-item" href="/Properties">
                                 Properties
-                                </a>
-
+                            </a>
+                            
                             <hr className="navbar-divider" />
-                            <a className="navbar-item" href="/issues">
+                            <a className="navbar-item" href="/Issues">
                                 Report an issue
-                                    </a>
+                            </a>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div className="navbar-end">
-                    <div className="navbar-item">
-                        <div className="buttons">
-                            <a className="button" href="/signup">
-                                Sign up
-                                    </a>
-                            <a className="button is-light" href="/login">
-                                Log in
+                    <div className="navbar-end">
+                        <div className="navbar-item">
+                            <div className="buttons">
+                                <a className="button" href="/signup">
+                                    Sign up
+                                </a>
+                                <a className="button is-light" href="/login">
+                                    Log in
                                      </a>
+                            </div>
                         </div>
                     </div>
                 </div>

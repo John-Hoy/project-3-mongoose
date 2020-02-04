@@ -8,7 +8,7 @@
  
 *William Hall* 
  
-See the published site [here](github.com/John-Hoy/project-3-mongoose) 
+See the published site [here](https://slumlords.herokuapp.com/) 
  
 ## About 
  
