@@ -5,7 +5,8 @@ function NavBarComponent({ loggedIn, _logout }) {
     return (
 
         <nav className="navbar" aria-label="main navigation">
-            <div className="navbar-brand">
+             <div className="navbar-brand">
+
 
 
                 
@@ -16,6 +17,7 @@ function NavBarComponent({ loggedIn, _logout }) {
                         <span aria-hidden="true"></span>
                     </a>
             </div>
+                
 
                 
             
@@ -25,7 +27,7 @@ function NavBarComponent({ loggedIn, _logout }) {
                         Home
                         </a>
 
-                    <a className="navbar-item" href="/listing">
+                    <a className="navbar-item" href="listing">
                         Listings
                         </a>
 
@@ -37,8 +39,11 @@ function NavBarComponent({ loggedIn, _logout }) {
                         Resources
                          </a>
 
-                         <div className="navbar-item has-dropdown is-hoverable">
-                            <a className="navbar-link" href="/">
+
+                         
+                    <div className="navbar-item has-dropdown is-hoverable">
+                        <div className="navbar-link navbar-drop">
+
                             Manage
                             </a>
 
